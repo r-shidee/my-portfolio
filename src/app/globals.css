@@ -25,7 +25,6 @@ body {
 	background-color: #705852;
 	border-radius: 1rem;
 	display: grid;
-	grid-template-rows: 7fr 2fr;
 }
 
 .device__screenborder {
@@ -38,7 +37,30 @@ body {
 	border-radius: 0px;
 	background: #2e3336;
 	box-shadow: inset 5px 5px 10px #1c1f20, inset -5px -5px 10px #40474c;
-	min-width: 256px;
+	width: 280px;
 	height: 320px;
 	padding: 1.25rem;
+	overflow: scroll;
+}
+
+.device__controls {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	min-height: 120px;
+	gap: 1.25rem;
+}
+
+.btn {
+	display: inline-flex;
+	border-radius: 100%;
+	height: fit-content;
+	padding: 12px;
+	border-radius: 50%;
+	background: linear-gradient(145deg, #785e58, #654f4a);
+	box-shadow: 5px 5px 20px #433531, -5px -5px 20px #9d7b73;
+	svg {
+		fill: #fff;
+	}
 }

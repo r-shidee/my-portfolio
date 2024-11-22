@@ -1,14 +1,15 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 	return (
-		<div className=" min-h-screen font-[family-name:var(--font-geist-sans)] flex items-center justify-center">
-			<div className="device grid">
-				<div className="device__screenborder">
-					<div className="screen ">body</div>
-				</div>
-				<div className="device__controls">controls</div>
-			</div>
+		<div className="screen font-mono">
+			<ul>
+				<li>
+					<Link href={"/profile"}>profile</Link>
+				</li>
+				<li>side projects</li>
+				<li>socials</li>
+			</ul>
 		</div>
 	);
 }
