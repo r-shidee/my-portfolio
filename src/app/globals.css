@@ -3,19 +3,42 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--background: #ffffff;
+	--foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+	color: var(--foreground);
+	background: var(--background);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.device {
+	padding: 1rem;
+	background-color: #705852;
+	border-radius: 1rem;
+	display: grid;
+	grid-template-rows: 7fr 2fr;
+}
+
+.device__screenborder {
+	padding: 1rem;
+	background-color: #4b4d4f;
+	border-radius: 0.5rem;
+}
+
+.screen {
+	border-radius: 0px;
+	background: #2e3336;
+	box-shadow: inset 5px 5px 10px #1c1f20, inset -5px -5px 10px #40474c;
+	min-width: 256px;
+	height: 320px;
+	padding: 1.25rem;
 }
